@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <title>Alpha Chi Omega</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'general/style.css' %}" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="shortcut icon" type="image/png" href="{% static 'general/images/favicon.png' %}" />
+</head>
+
+<body>
+  <div id='nav'>
+    <a href="/"><img src="{% static 'general/images/logo.png' %}"/></a>
+    <div id='links'>
+      <a href="/">Home</a>
+      <a href="/about">About Us</a>
+      <a href="/">Chapter Life</a>
+      <a href="/">Recruitment</a>
+      <a href="/">Sisters</a>
+    </div>
+  </div>
+  <div id='content'>
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
+
+</html>

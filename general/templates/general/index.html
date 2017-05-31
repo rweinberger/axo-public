@@ -1,21 +1,15 @@
-<!doctype html>
-
-<html lang="en">
-
+{% extends 'general/base.html' %}
 {% load static %}
+{% block content %}
 
-<head>
-  <meta charset="utf-8">
-  <title>Alpha Chi Omega</title>
-  <link rel="stylesheet" type="text/css" href="{% static 'general/style.css' %}" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</head>
 
-<body>
-  <div id='nav'>
-    <a href="/"></a>
-  </div>
-  <div>content</div>
-</body>
+<img class="slideshow" src="{% static 'general/images/P1.png' %}">
+<img class="slideshow" src="{% static 'general/images/P2.png' %}">
+<img class="slideshow" src="{% static 'general/images/P3.png' %}">
+<img class="slideshow" src="{% static 'general/images/P4.png' %}">
+<img class="slideshow" src="{% static 'general/images/P5.png' %}">
+<button class="left" onclick="switchimg(-1)">&#10094;</button>
+<button class="right" onclick="switchimg(+1)">&#10095;</button>
 
-</html>
+<script src="{% static 'general/scripts/slideshow.js' %}"></script>
+{% endblock content %}
