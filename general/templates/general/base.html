@@ -14,21 +14,21 @@
 
 <body>
   <div id='nav'>
-    <a href="/"><img id='logo' src="{% static 'general/images/logo.png' %}"/></a><br>
+    <a href="/" id='logolink'><img id='logo' src="{% static 'general/images/logo.png' %}"/></a><br>
     <a href="/" class="dropbtn">Home</a>
     <div id='links' class='dropdown'>
       <a href="/about" class="dropbtn">About Us</a>
       <div class="dropdown-content">
-        <a href="#">History</a>
-        <a href="#">House</a>
-        <a href="#">Exec Officers</a>
+        <a href="/history">History</a>
+        <a href="/house">House</a>
+        <a href="/exec">Exec Officers</a>
       </div>
     </div>
     <div id='links' class='dropdown'>
-      <a href="/" class="dropbtn">Chapter Life</a>
+      <a class="dropbtn">Chapter Life</a>
       <div class="dropdown-content">
-        <a href="#">Sisterhood</a>
-        <a href="#">Philanthropy</a>
+        <a href="/sisterhood">Sisterhood</a>
+        <a href="/philanthropy">Philanthropy</a>
       </div>
     </div>
     <div id='links' class='dropdown'>
@@ -52,9 +52,12 @@
   <div id='social'>
     <hr>
     Follow us on social media! <br>
-    <a href='https://www.instagram.com/axo_mit/'><img class='social_icon' src="{% static 'general/images/insta.png' %}"/></a>
-    <a href='https://www.facebook.com/MitAlphaChiOmega/'><img class='social_icon' src="{% static 'general/images/fb.png' %}"/></a>
-    <a href='https://axomit.tumblr.com/'><img class='social_icon' src="{% static 'general/images/tumblr.png' %}"/></a>
+    <a href='https://www.instagram.com/axo_mit/' target="_blank"><img class='social_icon' src="{% static 'general/images/insta.png' %}"/></a>
+    <a href='https://www.facebook.com/MitAlphaChiOmega/' target="_blank"><img class='social_icon' src="{% static 'general/images/fb.png' %}"/></a>
+    <a href='https://axomit.tumblr.com/' target="_blank"><img class='social_icon' src="{% static 'general/images/tumblr.png' %}"/></a>
+  </div>
+  <div id='copyright'>
+  <a href='https://github.com/rweinberger/axo-public' target="_blank">&#169; 2017</a>
   </div>
 </body>
 

@@ -3,14 +3,12 @@
 {% block content %}
 
 <div id='slideshow'>
-  <img class="slideshow" src="{% static 'general/images/P1.png' %}">
-  <img class="slideshow" src="{% static 'general/images/P2.png' %}">
-  <img class="slideshow" src="{% static 'general/images/P3.png' %}">
-  <img class="slideshow" src="{% static 'general/images/P4.png' %}">
-  <img class="slideshow" src="{% static 'general/images/P5.png' %}">
+  <img class="slideshow" src="{% static 'general/images/1.jpg' %}">
+  <img class="slideshow" src="{% static 'general/images/2.jpg' %}">
+  <img class="slideshow" src="{% static 'general/images/3.jpg' %}">
+  <img id="left" onclick="switchimg(-1)" src="{% static 'general/images/left.png' %}">
+  <img id="right" onclick="switchimg(-1)" src="{% static 'general/images/right.png' %}">
 </div>
-<button class="left" onclick="switchimg(-1)">&#10094;</button>
-<button class="right" onclick="switchimg(+1)">&#10095;</button>
 
 <div id='welcome'>
   <h1>Welcome to the Theta Omicron chapter<br>

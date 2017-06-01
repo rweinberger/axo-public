@@ -1,7 +1,12 @@
+@font-face {
+    font-family: custom;
+    src: url(./fonts/Sorts_Mill_Goudy/SortsMillGoudy-Regular.ttf);
+}
+
 html, body {
   height: 100%;
   width: 100%;
-  font-family: times;
+  font-family: custom;
   font-weight: 200;
 }
 
@@ -16,12 +21,32 @@ a:hover {
 
 hr { 
   border: 0; 
-  width: 700px;
+  max-width: 700px;
   height: 1px; 
   background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+#sisterhood {
+  line-height: 15pt;
+  text-align: left;
+}
+
+#president {
+  float:left;
+  margin-right: 20px;
+  text-align: right
+}
+
+#president-pic {
+  width: 320px;
+}
+
+#letter {
+  line-height: 15pt;
+  text-align: left;
 }
 
 #nav {
@@ -30,7 +55,11 @@ hr {
 }
 
 #logo {
-  width: 500px;
+  width: 400px;
+}
+
+#logolink:hover {
+  opacity:1;
 }
 
 #content{
@@ -45,15 +74,52 @@ hr {
   text-align: center
 }
 
+.social_icon {
+  width: 50px;
+  padding: 5px;
+}
+
+#copyright{
+  text-align: center;
+  font-size:10pt;
+  margin-bottom: 10px
+}
+
+/*SLIDESHOW*/
+
 .slideshow {
-  max-height: 400px;
+  max-height: 500px;
+  max-width: 700px;
   display:block;
   margin:auto;
 }
 
-.social_icon {
+#slideshow {
+  position: relative;
+}
+
+#left {
+  position: absolute;
+  top: 45%;
+  left: 0;
   width: 50px;
-  padding: 5px;
+}
+
+#left:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+#right {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  width: 50px;
+}
+
+#right:hover {
+  opacity: 0.3;
+  cursor: pointer;
 }
 
 /*DROPDOWN MENUS*/
@@ -75,7 +141,6 @@ hr {
   display: none;
   position: absolute;
   background-color: #fff;
-  opacity: .8;
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
