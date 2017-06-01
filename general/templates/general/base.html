@@ -19,7 +19,6 @@
     <div id='links' class='dropdown'>
       <a href="/about" class="dropbtn">About Us</a>
       <div class="dropdown-content">
-        <a href="#">Letter from the President</a>
         <a href="#">History</a>
         <a href="#">House</a>
         <a href="#">Exec Officers</a>
@@ -45,11 +44,13 @@
       </div>
     </div>
   </div>
+  <hr>
   <div id='content'>
     {% block content %}
     {% endblock %}
   </div>
   <div id='social'>
+    <hr>
     Follow us on social media! <br>
     <a href='https://www.instagram.com/axo_mit/'><img class='social_icon' src="{% static 'general/images/insta.png' %}"/></a>
     <a href='https://www.facebook.com/MitAlphaChiOmega/'><img class='social_icon' src="{% static 'general/images/fb.png' %}"/></a>
