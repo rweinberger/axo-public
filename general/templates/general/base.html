@@ -14,18 +14,46 @@
 
 <body>
   <div id='nav'>
-    <a href="/"><img src="{% static 'general/images/logo.png' %}"/></a>
-    <div id='links'>
-      <a href="/">Home</a>
-      <a href="/about">About Us</a>
-      <a href="/">Chapter Life</a>
-      <a href="/">Recruitment</a>
-      <a href="/">Sisters</a>
+    <a href="/"><img id='logo' src="{% static 'general/images/logo.png' %}"/></a><br>
+    <a href="/" class="dropbtn">Home</a>
+    <div id='links' class='dropdown'>
+      <a href="/about" class="dropbtn">About Us</a>
+      <div class="dropdown-content">
+        <a href="#">Letter from the President</a>
+        <a href="#">History</a>
+        <a href="#">House</a>
+        <a href="#">Exec Officers</a>
+      </div>
+    </div>
+    <div id='links' class='dropdown'>
+      <a href="/" class="dropbtn">Chapter Life</a>
+      <div class="dropdown-content">
+        <a href="#">Sisterhood</a>
+        <a href="#">Philanthropy</a>
+      </div>
+    </div>
+    <div id='links' class='dropdown'>
+      <a href="/" class="dropbtn">Recruitment</a>
+      <div class="dropdown-content">
+        <a href="#">FAQ</a>
+      </div>
+    </div>
+    <div id='links' class='dropdown'>
+      <a href="/" class="dropbtn">Sisters</a>
+      <div class="dropdown-content">
+        <a href="#">Involvement</a>
+      </div>
     </div>
   </div>
   <div id='content'>
     {% block content %}
     {% endblock %}
+  </div>
+  <div id='social'>
+    Follow us on social media! <br>
+    <a href='https://www.instagram.com/axo_mit/'><img class='social_icon' src="{% static 'general/images/insta.png' %}"/></a>
+    <a href='https://www.facebook.com/MitAlphaChiOmega/'><img class='social_icon' src="{% static 'general/images/fb.png' %}"/></a>
+    <a href='https://axomit.tumblr.com/'><img class='social_icon' src="{% static 'general/images/tumblr.png' %}"/></a>
   </div>
 </body>
 

@@ -2,14 +2,22 @@
 {% load static %}
 {% block content %}
 
-
-<img class="slideshow" src="{% static 'general/images/P1.png' %}">
-<img class="slideshow" src="{% static 'general/images/P2.png' %}">
-<img class="slideshow" src="{% static 'general/images/P3.png' %}">
-<img class="slideshow" src="{% static 'general/images/P4.png' %}">
-<img class="slideshow" src="{% static 'general/images/P5.png' %}">
+<div id='slideshow'>
+  <img class="slideshow" src="{% static 'general/images/P1.png' %}">
+  <img class="slideshow" src="{% static 'general/images/P2.png' %}">
+  <img class="slideshow" src="{% static 'general/images/P3.png' %}">
+  <img class="slideshow" src="{% static 'general/images/P4.png' %}">
+  <img class="slideshow" src="{% static 'general/images/P5.png' %}">
+</div>
 <button class="left" onclick="switchimg(-1)">&#10094;</button>
 <button class="right" onclick="switchimg(+1)">&#10095;</button>
+
+<div id='welcome'>
+  <h1>Welcome to the Theta Omicron chapter<br>
+  of Alpha Chi Omega at MIT!</h1>
+Since our start on the MIT campus in 1986, our sorority has been committed to promoting sisterhood, leadership, personal growth, and lifelong friendship. <br>
+ <a href='/about'>LEARN MORE > </a>
+</div>
 
 <script src="{% static 'general/scripts/slideshow.js' %}"></script>
 {% endblock content %}
