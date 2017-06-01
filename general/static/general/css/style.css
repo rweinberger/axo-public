@@ -1,6 +1,6 @@
 @font-face {
     font-family: custom;
-    src: url(./fonts/Sorts_Mill_Goudy/SortsMillGoudy-Regular.ttf);
+    src: url(./../fonts/Sorts_Mill_Goudy/SortsMillGoudy-Regular.ttf);
 }
 
 html, body {
@@ -15,18 +15,30 @@ a {
   text-decoration: none
 }
 
-a:hover {
-  opacity: .5
+a:hover, a:focus, a:active {
+  cursor: pointer;
+  opacity: .5;
+  color: #000;
+  text-decoration: none
+}
+
+h1, h2, h3 {
+  margin:0px;
 }
 
 hr { 
   border: 0; 
   max-width: 700px;
   height: 1px; 
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+  background-image: -webkit-linear-gradient(left, #fff, #8c8b8b, #fff);
+  background-image: -moz-linear-gradient(left, #fff, #8c8b8b, #fff);
+  background-image: -ms-linear-gradient(left, #fff, #8c8b8b, #fff);
+  background-image: -o-linear-gradient(left, #fff, #8c8b8b, #fff); 
+}
+
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
 }
 
 #sisterhood {
@@ -37,7 +49,17 @@ hr {
 #president {
   float:left;
   margin-right: 20px;
-  text-align: right
+  text-align: left;
+  position: relative
+}
+
+#pcaption{
+  position: absolute;
+  left:0;
+  bottom:0;
+  padding: 10px;
+  width: 101%;
+  background: rgba(256, 256, 256, 0.5);
 }
 
 #president-pic {
@@ -65,7 +87,6 @@ hr {
 #content{
   max-width: 700px;
   margin:auto;
-  padding: 20px;
   text-align: center
 }
 
@@ -85,42 +106,6 @@ hr {
   margin-bottom: 10px
 }
 
-/*SLIDESHOW*/
-
-.slideshow {
-  max-height: 500px;
-  max-width: 700px;
-  display:block;
-  margin:auto;
-}
-
-#slideshow {
-  position: relative;
-}
-
-#left {
-  position: absolute;
-  top: 45%;
-  left: 0;
-  width: 50px;
-}
-
-#left:hover {
-  opacity: 0.3;
-  cursor: pointer;
-}
-
-#right {
-  position: absolute;
-  top: 45%;
-  right: 0;
-  width: 50px;
-}
-
-#right:hover {
-  opacity: 0.3;
-  cursor: pointer;
-}
 
 /*DROPDOWN MENUS*/
 

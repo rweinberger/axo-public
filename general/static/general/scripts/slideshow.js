@@ -3,7 +3,8 @@ var x = document.getElementsByClassName("slideshow");
 rotate();
 
 function switchimg(n) {
-  showimg(slideIndex += n);
+  slideIndex += n;
+  showimg(slideIndex);
 }
 
 function showimg(n) {
@@ -13,7 +14,8 @@ function showimg(n) {
   }
   if (n > x.length) {slideIndex = 1} 
   if (n < 1) {slideIndex = x.length} ;
-  x[slideIndex-1].style.display = "block"; 
+  x[slideIndex-1].style.display = "block";
+  setTimeout(rotate, 4000);
 }
 
 function rotate() {
@@ -22,6 +24,5 @@ function rotate() {
     x[i].style.display = "none"; 
   }
   slideIndex++;
-  showimg(slideIndex);
-  setTimeout(rotate, 5000); // Change image every 2 seconds
+  showimg(slideIndex)
 }
