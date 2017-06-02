@@ -10,4 +10,8 @@ urlpatterns = [
     url(r'^exec/', views.ex, name='ex'),
     url(r'^sisterhood/', views.sisterhood, name='sisterhood'),
     url(r'^philanthropy/', views.philanthropy, name='philanthropy'),
+    url(r'^recruitment/', views.recruitment, name='recruitment'),
+    url(r'^faq/', views.faq, name='faq'),
+    url(r'^sisters/', views.sisters, name='sisters'),
+    url(r'^involvement/', views.involvement, name='involvement')
 ]

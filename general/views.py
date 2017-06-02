@@ -18,14 +18,22 @@ def ex(request):
   return render(request, 'general/exec.html', {})
 
 def house(request):
-  return render(request, 'general/house.html', {})
+  return render(request, 'general/construction.html', {'title': 'Our House'})
 
 def sisterhood(request):
   return render(request, 'general/sisterhood.html', {})
 
 def philanthropy(request):
-  return render(request, 'general/philanthropy.html', {})
+  return render(request, 'general/construction.html', {'title': 'Philanthropy'})
 
-def rend(request, name):
-  file = 'general/'+name+'.html'
-  return render(request, file, {})
+def recruitment(request):
+  return render(request, 'general/recruitment.html', {})
+
+def faq(request):
+  return render(request, 'general/faq.html', {})
+
+def sisters(request):
+  return render(request, 'general/sisters.html', {})
+
+def involvement(request):
+  return render(request, 'general/involvement.html', {})

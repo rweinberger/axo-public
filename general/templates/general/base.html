@@ -18,9 +18,9 @@
 <body>
   <div id='nav'>
     <a href="/" id='logolink'><img id='logo' src="{% static 'general/images/logo.png' %}"/></a><br>
-    <a href="/" class="dropbtn">Home</a>
+    <a id='home' href="/" class="dropbtn">Home</a>
     <div id='links' class='dropdown'>
-      <a href="/about" class="dropbtn">About Us</a>
+      <a id='about' href="/about" class="dropbtn">About Us</a>
       <div class="dropdown-content">
         <a href="/history">History</a>
         <a href="/house">House</a>
@@ -28,22 +28,22 @@
       </div>
     </div>
     <div id='links' class='dropdown'>
-      <a class="dropbtn">Chapter Life</a>
+      <a id='chapter-life' class="dropbtn">Chapter Life</a>
       <div class="dropdown-content">
         <a href="/sisterhood">Sisterhood</a>
         <a href="/philanthropy">Philanthropy</a>
       </div>
     </div>
     <div id='links' class='dropdown'>
-      <a href="/" class="dropbtn">Recruitment</a>
+      <a id='recruitment' href="/recruitment" class="dropbtn">Recruitment</a>
       <div class="dropdown-content">
-        <a href="#">FAQ</a>
+        <a href="/faq">FAQ</a>
       </div>
     </div>
     <div id='links' class='dropdown'>
-      <a href="/" class="dropbtn">Sisters</a>
+      <a id='sisters' href="/sisters" class="dropbtn">Sisters</a>
       <div class="dropdown-content">
-        <a href="#">Involvement</a>
+        <a href="/involvement">Involvement</a>
       </div>
     </div>
   </div>
@@ -63,5 +63,5 @@
   <a href='https://github.com/rweinberger/axo-public' target="_blank">&#169; 2017</a>
   </div>
 </body>
-
+<script src="{% static 'general/scripts/test.js' %}"></script>
 </html>
