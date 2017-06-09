@@ -3,7 +3,15 @@
 {% block content %}
 
 <h2>Sisters</h2><br>
-
-baiii
+{% for year,list in sisters %}
+  <h2>{{year}}</h2>
+  {% for person in list %}
+    {% if person.PRC %}
+      <p>PRC!</p>
+    {% else %}
+      <p>{{person.first_name}} {{person.last_name}}</p>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
 
 {% endblock content %}

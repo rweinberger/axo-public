@@ -2,7 +2,9 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
+from django.template import loader
 from django.http import HttpResponse
+from .models import Sister, Setup
 
 
 def index(request):
@@ -33,7 +35,23 @@ def faq(request):
   return render(request, 'general/faq.html', {})
 
 def sisters(request):
-  return render(request, 'general/sisters.html', {})
+  y = Setup.objects.get(active_setup=True).year_of_graduating_seniors
+  a, b, c, d = y, y+1, y+2, y+3
+  seniors = Sister.objects.filter(class_year=a)
+  juniors = Sister.objects.filter(class_year=b)
+  sophomores = Sister.objects.filter(class_year=c)
+  freshmen = Sister.objects.filter(class_year=d)
+  sisters = [
+    (a, seniors),
+    (b, juniors),
+    (c, sophomores),
+    (d, freshmen)
+  ]
+  context = {
+    'sisters':sisters
+  }
+  template = loader.get_template('general/sisters.html')
+  return HttpResponse(template.render(context, request))
 
 def involvement(request):
   return render(request, 'general/involvement.html', {})
