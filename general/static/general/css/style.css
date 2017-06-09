@@ -15,6 +15,7 @@ a {
   text-decoration: none
 }
 
+
 a:hover, a:focus, a:active {
   cursor: pointer;
   color: #888888;
@@ -35,6 +36,17 @@ hr {
   background-image: -o-linear-gradient(left, #fff, #8c8b8b, #fff); 
 }
 
+#carousel2 {
+  width: 400px;
+  float:right;
+  padding-left:20px;
+}
+
+#carousel3 {
+  width: 400px;
+  float:left;
+  padding-right:20px;
+}
 
 .carousel-control.left, .carousel-control.right {
   background-image: none;
@@ -171,7 +183,8 @@ hr {
 #content{
   max-width: 800px;
   margin:auto;
-  text-align: center
+  text-align: center;
+  overflow: auto
 }
 
 #social{
