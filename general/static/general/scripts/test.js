@@ -22,5 +22,5 @@ switch(x) {
     break;
 };
 
-$(title).css('color', '#888888');
+$(title).css('color', '#000');
 $(title).css('border-bottom', 'solid 1px #ccc');

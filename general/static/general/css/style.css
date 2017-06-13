@@ -131,6 +131,11 @@ hr {
   margin: 16px;
   border: none;
   cursor: pointer;
+  color: #888;
+}
+
+.dropbtn:hover {
+  color: #000;
 }
 
 .dropdown {
@@ -150,6 +155,7 @@ hr {
 }
 
 .dropdown-content a {
+  color: #888;
   font-size: 10pt;
   padding: 7px 5px;
   text-decoration: none;
@@ -158,7 +164,7 @@ hr {
 
 .dropdown-content a:hover {
   color: black;
-  background-color: #f6f5f5
+  /*background-color: #f6f5f5*/
 }
 
 .dropdown:hover .dropdown-content {
