@@ -6,56 +6,19 @@
 
 <div class='officer'>
   <img class='officer-pic' src="{% static 'general/images/berd.png' %}"/>
-  <p><h3>Chapter President</h3>Berd</p>
+  <p><h3>Chapter President</h3>{{pres.first_name}} {{pres.last_name}}</p>
 </div>
 <div class='officer'>
   <img class='officer-pic' src="{% static 'general/images/berd.png' %}"/>
-  <p><h3>VP Chapter Relations + Standards</h3>Berd</p>
+  <p><h3>VP Chapter Relations + Standards</h3>{{crs.first_name}} {{crs.last_name}}</p>
 </div><br>
-<div class='officer'>
-  <img class='officer-pic' src="{% static 'general/images/berd.png' %}"/>
-  <p><h3>VP Finance</h3>Berd</p>
-</div>
-<div class='officer'>
-  <img class='officer-pic' src="{% static 'general/images/berd.png' %}"/>
-  <p><h3>VP Risk Management</h3>Berd</p>
-</div>
-<div class='officer'>
-  <img class='officer-pic' src="{% static 'general/images/berd.png' %}"/>
-  <p><h3>VP Ritual + Fraternity Appreciation</h3>Berd</p>
-</div>
-<div class='officer'>
-  <img class='officer-pic' src="{% static 'general/images/berd.png' %}"/>
-  <p><h3>VP Recruitment</h3>Berd</p>
-</div>
-<div class='officer'>
-  <img class='officer-pic' src="{% static 'general/images/berd.png' %}"/>
-  <p><h3>VP New Member Education</h3>Berd</p>
-</div>
-<div class='officer'>
-  <img class='officer-pic' src="{% static 'general/images/berd.png' %}"/>
-  <p><h3>VP Public Relations + Marketing</h3>Berd</p>
-</div>
-<div class='officer'>
-  <img class='officer-pic' src="{% static 'general/images/berd.png' %}"/>
-  <p><h3>VP Membership Programming</h3>Berd</p>
-</div>
-<div class='officer'>
-  <img class='officer-pic' src="{% static 'general/images/berd.png' %}"/>
-  <p><h3>Panhellenic Delegate</h3>Berd</p>
-</div>
-<div class='officer'>
-  <img class='officer-pic' src="{% static 'general/images/berd.png' %}"/>
-  <p><h3>VP Intellectual Development</h3>Berd</p>
-</div>
-<div class='officer'>
-  <img class='officer-pic' src="{% static 'general/images/berd.png' %}"/>
-  <p><h3>VP Facility Operations</h3>Berd</p>
-</div>
-<div class='officer'>
-  <img class='officer-pic' src="{% static 'general/images/berd.png' %}"/>
-  <p><h3>VP Philanthropy</h3>Berd</p>
-</div>
+
+{% for name, sister in exec %}
+  <div class='officer'>
+    <img class='officer-pic' src="{% static 'general/images/berd.png' %}"/>
+    <p><h3>{{name}}</h3>{{sister.first_name}} {{sister.last_name}}</p>
+  </div>
+{% endfor %}
 
 
 {% endblock content %}

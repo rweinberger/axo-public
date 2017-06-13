@@ -21,7 +21,7 @@ class Setup(models.Model):
   President = models.ForeignKey(Sister, on_delete=models.CASCADE, related_name='President', blank=True, null=True)
   VP_CRS = models.ForeignKey(Sister, on_delete=models.CASCADE, related_name='VP_CRS', blank=True, null=True)
   VP_Finance = models.ForeignKey(Sister, on_delete=models.CASCADE, related_name='VP_Finance', blank=True, null=True)
-  VP_Risk_Management = models.ForeignKey(Sister, on_delete=models.CASCADE, related_name='VP_Risk_Management', blank=True, null=True), 
+  VP_Risk_Management = models.ForeignKey(Sister, on_delete=models.CASCADE, related_name='VP_Risk_Management', blank=True, null=True)
   VP_Ritual_and_Fraternity_Appreciation = models.ForeignKey(Sister, related_name='VP_Ritual_and_Fraternity_Appreciation', on_delete=models.CASCADE, blank=True, null=True)
   VP_Recruitment = models.ForeignKey(Sister, on_delete=models.CASCADE, related_name='VP_Recruitment', blank=True, null=True)
   VP_New_Member_Ed = models.ForeignKey(Sister, on_delete=models.CASCADE, related_name='VP_New_Member_Ed', blank=True, null=True)

@@ -17,7 +17,27 @@ def history(request):
   return render(request, 'general/history.html', {})
 
 def ex(request):
-  return render(request, 'general/exec.html', {})
+  setup = Setup.objects.filter(active_setup=True)[0]
+  ex = [
+    ('VP Finance', setup.VP_Finance),
+    ('VP Risk Management', setup.VP_Risk_Management),
+    ('VP Ritual and Fraternity Appreciation', setup.VP_Ritual_and_Fraternity_Appreciation),
+    ('VP Recruitment', setup.VP_Recruitment),
+    ('VP New Member Ed', setup.VP_New_Member_Ed),
+    ('VP PR and Marketing', setup.VP_PR_and_Marketing),
+    ('VP Membership Programming', setup.VP_Membership_Programming),
+    ('Panhellenic Delegate', setup.Panhellenic_Delegate),
+    ('VP Intellectual Development', setup.VP_Intellectual_Development),
+    ('VP Facility Operations', setup.VP_Facility_Operations),
+    ('VP Philanthropy', setup.VP_Philanthropy)
+  ]
+  context = {
+    'pres': setup.President,
+    'crs': setup.VP_CRS,
+    'exec':ex
+  }
+  template = loader.get_template('general/exec.html')
+  return HttpResponse(template.render(context, request))
 
 def house(request):
   return render(request, 'general/construction.html', {'title': 'Our House'})
