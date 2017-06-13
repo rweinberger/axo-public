@@ -35,7 +35,7 @@ def faq(request):
   return render(request, 'general/faq.html', {})
 
 def sisters(request):
-  y = Setup.objects.get(active_setup=True).year_of_graduating_seniors
+  y = Setup.objects.filter(active_setup=True)[0].year_of_graduating_seniors
   a, b, c, d = y, y+1, y+2, y+3
   seniors = Sister.objects.filter(class_year=a)
   juniors = Sister.objects.filter(class_year=b)
