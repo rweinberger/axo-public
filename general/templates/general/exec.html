@@ -14,10 +14,13 @@
 </div><br>
 
 {% for name, sister in exec %}
-  <div class='officer'>
-    <img class='officer-pic' src="{{sister.profile_image.url}}"/>
-    <p><h3>{{sister.first_name}} {{sister.last_name}}</h3>{{name}}</p>
-  </div>
+  {% if sister %}
+    <div class='officer'>
+      <img class='officer-pic' src="{{sister.profile_image.url}}"/>
+      <p><h3>{{sister.first_name}} {{sister.last_name}}</h3>{{name}}</p>
+    </div>
+  {% else %}
+  {% endif %}
 {% endfor %}
 
 

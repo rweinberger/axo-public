@@ -62,10 +62,10 @@ def sisters(request):
   sophomores = Sister.objects.filter(class_year=c)
   freshmen = Sister.objects.filter(class_year=d)
   sisters = [
-    (a, seniors),
-    (b, juniors),
+    (d, freshmen),
     (c, sophomores),
-    (d, freshmen)
+    (b, juniors),
+    (a, seniors),
   ]
   context = {
     'sisters':sisters

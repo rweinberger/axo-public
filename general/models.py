@@ -11,7 +11,7 @@ class Sister(models.Model):
   class_year = models.IntegerField()
   image_height = models.PositiveIntegerField(null=True, blank=True, editable=False, default="100")
   image_width = models.PositiveIntegerField(null=True, blank=True, editable=False, default="100")
-  profile_image = models.ImageField(height_field='image_height', width_field='image_width', upload_to='images', default='images/default.jpg', blank=True, null=True)
+  profile_image = models.ImageField(height_field='image_height', width_field='image_width', upload_to='images', default='images/default.png', blank=True, null=True)
   PRC = models.BooleanField(default=False)
   def __str__(self):
     return self.first_name+' '+self.last_name

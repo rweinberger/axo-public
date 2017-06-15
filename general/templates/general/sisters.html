@@ -1,17 +1,30 @@
 {% extends 'general/base.html' %}
-
+{% load static %}
 {% block content %}
 
-<h2>Sisters</h2><br>
 {% for year,list in sisters %}
-  <h2>{{year}}</h2>
+  <h1>Class of {{year}}</h1>
   {% for person in list %}
     {% if person.PRC %}
-      <p>PRC!</p>
+      <div class='sister'>
+        <img class='sister-pic' src="{% static 'general/images/default.png' %}"/><br>
+        <p>PRC!</p>
+      </div>
     {% else %}
-      <p>{{person.first_name}} {{person.last_name}}</p>
+      {% if person.profile_image %}
+        <div class='sister'>
+          <img class='sister-pic' src="{{person.profile_image.url}}"/><br>
+          <p>{{person.first_name}} {{person.last_name}}</p>
+        </div>
+      {% else %}
+        <div class='sister'>
+          <img class='sister-pic' src="{% static 'general/images/default.png' %}"/><br>
+          <p>{{person.first_name}} {{person.last_name}}</p>
+        </div>
+      {% endif %}
     {% endif %}
   {% endfor %}
+  <br><br><br>
 {% endfor %}
 
 {% endblock content %}

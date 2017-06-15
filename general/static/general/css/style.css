@@ -103,8 +103,26 @@ hr {
 }
 
 .officer-pic {
+  min-height: 240px;
   width: 240px
 }
+
+/*SISTERS*/
+.sister {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 125px;
+  margin: 7px;
+}
+
+.sister-pic {
+  min-height:125px;
+  width: 125px;
+  border-radius: 100px;
+  border: solid 4px #ccc;
+}
+
+
 /*HISTORY*/
 
 #history {
