@@ -26,7 +26,7 @@ SECRET_KEY = '&xfcb5(&_4k$)z5obzhyo)^wwdba$mfskq*oe6f!5=nh(*85_w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['axo-public.herokuapp.com']
+ALLOWED_HOSTS = ['axo-public.herokuapp.com', 'shielded-river-73373.herokuapp.com']
 
 DISABLE_COLLECTSTATIC=1
 
