@@ -74,4 +74,4 @@ def sisters(request):
   return HttpResponse(template.render(context, request))
 
 def involvement(request):
-  return render(request, 'general/involvement.html', {})
+  return render(request, 'general/construction.html', {'title': 'Involvement'})

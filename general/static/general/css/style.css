@@ -116,7 +116,7 @@ hr {
 }
 
 .sister-pic {
-  min-height:125px;
+  height:125px;
   width: 125px;
   border-radius: 100px;
   border: solid 4px #e5e5e5;
