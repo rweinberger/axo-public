@@ -5,3 +5,4 @@ env/
 staticfiles/
 media/
 .*.swp
+axo_public/local_settings.py
