@@ -5,26 +5,26 @@
 <h2>A Message from the President</h2>
 <br>
 <div id='president'>
-  <img id='president-pic' src="{% static 'general/images/siena.png' %}"/>
+  <!-- <img id='president-pic' src="{% static 'general/images/siena.png' %}"/> -->
+  <img id='president-pic' src="{{pres.profile_image.url}}"/>
   <div id='pcaption'>
-    <h2>Siena Scigliuto</h2>
+    <h2>{{pres.first_name}} {{pres.last_name}}</h2>
     Chapter President
   </div>
 </div>
 <p class='left-align'>
-Hello and welcome to Alpha Chi Omega at the Massachusetts Institute of Technology - my home within a home at MIT! These women you see here are the core of my community at MIT: My study partners, my favorite people to explore Boston with, the role models I look up to, and my constant supporters whenever I need a hand or a shoulder. When I came to MIT, I never expected to be in a sorority, but I can definitely say I am a better - and happier - person for my experience with AXO.
-
+Hello and welcome! It is with great pride that I introduce you to our sorority of Alpha Chi Omega, Theta Omicron Chapter, here at MIT. 
 <br><br> 
-MIT is a tough place. As an engineer here, I'm constantly being pushed to my limits mentally and even physically (How much sleep do you think you need, really?). It's easy to get lost in the daily struggle of psets and classes. Or rather, it would be if I didn't have an incredible support system to keep me grounded and inspired. AXO is all about building a healthy and well-rounded life within the MIT firehose, being passionate about what we do, and every day living up to our motto of Real Strong Women. My sisters here are engineers and biologists, artists and athletes. They are putting rockets into space and advocating for science in the nation's capital, running in marathons and running student groups. I can't say how much I'm honored to serve this year as Chapter President and to represent all of these amazing women.
+Alpha Chi Omega was founded in 1885 under the motto “Real. Strong. Women.” I have never heard such an appropriate tagline. The women in my sorority are strong in will, talent, and compassion. They are astoundingly kind and impressively intelligent (even within MIT!). Their capacities for love and support exceed all bounds and never cease to inspire me to be a kinder, more giving person. Our chapter is also proudly involved in the MIT community. My sisters here are engineers and biologists, artists and athletes. They are putting rockets into space and advocating for science in the nation's capital, running in marathons and running student groups. 
 <br><br> 
-Our chapter is involved both on and off campus. Sisters participate in almost every organization at MIT, from DanceTroupe to the Society of Women Engineers. As a chapter we volunteer and host events to support Alpha Chi Omega's national philanthropy, domestic violence awareness, and our local partner the Boston Area Rape Crisis Center. Within our chapter and as part of the Panhellenic community, we work to promote the wellbeing and growth of our sisters in areas such as mental health and leadership. Over the past few years, I have had the opportunity to grow as a leader in this organization and I can say without a doubt that it has been one of the biggest influences on my leadership development.
+As an organization built by and for real, strong women, we recognize the importance of supporting women outside of our own organization. Our philanthropy, domestic violence awareness, is a major global issue that needs a strong voice. The women of Alpha Chi Omega stand behind this cause to help make our community and the world a safer and more positive place for all individuals affected by domestic violence. As a chapter, we work to promote and educate on healthy relationships within our MIT community, as well as shed light on the evils of domestic violence. I invite you to visit our Philanthropy page to learn more about our dedication to this cause.
 ​<br><br> 
-Greek life at MIT is important to everyone involved - as a home, a family, and a support system. Our sisterhood lasts beyond our four years here, and it's exciting to think I've only just scratched the surface of everything we can become. I'm proud to be a part of this sisterhood, proud to be this year's Chapter President, and proud to "Seek the Heights" as an Alpha Chi Omega and an MIT Engineer.
- <br><br> 
-Thank you for taking the time to explore our website and learn more about Alpha Chi Omega!
+Alpha Chi Omega gave me a home at MIT. These women are now my closest friends and most reliable support network. They are the women I turn to when MIT knocks me down and are the women I celebrate with when life picks me back up. My sisters make me feel both instantly at home and inspired to become like the accomplished, respectable, and compassionate women I call sisters. 
+<br><br> 
+So thank you again for stopping by our website. I hope it gives you a glimpse into the love and sisterhood that I have found here as an Alpha Chi Omega.
 </p><br>
 <div id='signature'>
-  <h3>Siena Scigliuto</h3>
+  <h3>{{pres.first_name}} {{pres.last_name}}</h3>
   <a href='mailto:axo-president@mit.edu'>axo-president@mit.edu</a>
 </div>
 {% endblock content %}

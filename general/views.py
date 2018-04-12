@@ -11,7 +11,13 @@ def index(request):
   return render(request, 'general/index.html', {})
 
 def about(request):
-  return render(request, 'general/about.html', {})
+  setup = Setup.objects.filter(active_setup=True)[0]
+  context = {
+    'pres': setup.President
+  }
+  template = loader.get_template('general/about.html')
+  # return render(request, 'general/about.html', {})
+  return HttpResponse(template.render(context, request))
 
 def history(request):
   return render(request, 'general/history.html', {})
