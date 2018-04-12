@@ -5,18 +5,18 @@
 <h2>Our Executive Board</h2><br>
 
 <div class='officer'>
-  <img class='officer-pic' src="{{pres.profile_image.url}}"/>
+  <div class='officer-pic' style="background-image: url({{pres.profile_image.url}})"></div>
   <p><h3>{{pres.first_name}} {{pres.last_name}}</h3>Chapter President</p>
 </div>
 <div class='officer'>
-  <img class='officer-pic' src="{{crs.profile_image.url}}"/>
+  <div class='officer-pic' style="background-image: url({{crs.profile_image.url}})"></div>
   <p><h3>{{crs.first_name}} {{crs.last_name}}</h3>VP Chapter Relations + Standards</p>
 </div><br>
 
 {% for name, sister in exec %}
   {% if sister %}
     <div class='officer'>
-      <img class='officer-pic' src="{{sister.profile_image.url}}"/>
+      <div class='officer-pic' style="background-image: url({{sister.profile_image.url}})"></div>
       <p><h3>{{sister.first_name}} {{sister.last_name}}</h3>{{name}}</p>
     </div>
   {% else %}

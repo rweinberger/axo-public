@@ -103,8 +103,10 @@ hr {
 }
 
 .officer-pic {
-  min-height: 240px;
-  width: 240px
+  height: 240px;
+  width: 240px;
+  background-position: center;
+  background-size: cover;
 }
 
 /*SISTERS*/
@@ -208,7 +210,6 @@ hr {
   max-width: 800px;
   margin:auto;
   text-align: center;
-  overflow: auto
 }
 
 #social{
