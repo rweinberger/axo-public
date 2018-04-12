@@ -150,12 +150,17 @@ hr {
 .dropbtn {
   margin: 16px;
   border: none;
-  cursor: pointer;
   color: #888;
+  cursor: default;
 }
 
 .dropbtn:hover {
   color: #000;
+  cursor: default;
+}
+
+.droplink:hover {
+  cursor: pointer;
 }
 
 .dropdown {
@@ -169,7 +174,7 @@ hr {
   display: none;
   position: absolute;
   background-color: #fff;
-  min-width: 100px;
+  width: max-content;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
