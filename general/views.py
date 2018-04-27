@@ -81,3 +81,6 @@ def sisters(request):
 
 def involvement(request):
   return render(request, 'general/construction.html', {'title': 'Involvement'})
+
+def alumni(request):
+  return render(request, 'general/alumni.html', {'title': 'Alumni'})

@@ -13,5 +13,6 @@ urlpatterns = [
     url(r'^recruitment/', views.recruitment, name='recruitment'),
     url(r'^faq/', views.faq, name='faq'),
     url(r'^sisters/', views.sisters, name='sisters'),
-    url(r'^involvement/', views.involvement, name='involvement')
+    url(r'^involvement/', views.involvement, name='involvement'),
+    url(r'^alumni/', views.alumni, name='alumni')
 ]

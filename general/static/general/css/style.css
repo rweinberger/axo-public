@@ -124,6 +124,13 @@ hr {
   border: solid 4px #e5e5e5;
 }
 
+/*ALUMNI*/
+#alum-pic {
+  width: 250px;
+  margin-right: 20px;
+  float: left;
+}
+
 
 /*HISTORY*/
 
