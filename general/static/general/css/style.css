@@ -1,13 +1,14 @@
 @font-face {
     font-family: custom;
-    src: url(./../fonts/Sorts_Mill_Goudy/SortsMillGoudy-Regular.ttf);
+    src: url(./../fonts/Raleway/Raleway-Regular.ttf);
 }
 
 html, body {
   height: 100%;
   width: 100%;
   font-family: custom;
-  font-size: 11pt
+  font-size: 11pt;
+  letter-spacing: 1px;
 }
 
 a {
@@ -159,6 +160,7 @@ hr {
   border: none;
   color: #888;
   cursor: default;
+  text-transform: uppercase;
 }
 
 .dropbtn:hover {
