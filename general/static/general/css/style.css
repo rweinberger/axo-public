@@ -53,11 +53,6 @@ hr {
   background-image: none;
 }
 
-#sisterhood {
-  line-height: 15pt;
-  text-align: left;
-}
-
 .left-align {
   line-height: 15pt;
   text-align: left;
@@ -111,6 +106,20 @@ hr {
 }
 
 /*SISTERS*/
+
+#sisterhood-pic {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  width: 420px;
+}
+
+#big-little {
+  float: right;
+  margin-left: 20px;
+  width: 400px;
+}
+
 .sister {
   display: inline-block;
   vertical-align: top;
