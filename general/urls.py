@@ -14,5 +14,6 @@ urlpatterns = [
     url(r'^faq/', views.faq, name='faq'),
     url(r'^sisters/', views.sisters, name='sisters'),
     url(r'^involvement/', views.involvement, name='involvement'),
-    url(r'^alumni/', views.alumni, name='alumni')
+    url(r'^alumni/', views.alumni, name='alumni'),
+    url(r'^outsidemit/', views.outsidemit, name='outsidemit')
 ]

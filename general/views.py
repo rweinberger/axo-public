@@ -84,3 +84,6 @@ def involvement(request):
 
 def alumni(request):
   return render(request, 'general/alumni.html', {'title': 'Alumni'})
+
+def outsidemit(request):
+  return render(request, 'general/outsidemit.html', {'title': 'Outside MIT'})
