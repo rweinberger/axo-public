@@ -1,29 +1,24 @@
 {% extends 'general/base.html' %}
 {% load static %}
 {% block content %}
+
+<h2>Our House</h2><br>
+
 <div id="carousel1" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carousel1" data-slide-to="0" class="active"></li>
     <li data-target="#carousel1" data-slide-to="1"></li>
     <li data-target="#carousel1" data-slide-to="2"></li>
-    <li data-target="#carousel1" data-slide-to="3"></li>
-    <li data-target="#carousel1" data-slide-to="4"></li>
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="{% static 'general/images/1.jpg' %}" alt="First slide">
+      <img src="{% static 'general/images/housefront.jpg' %}" alt="First slide">
     </div>
     <div class="item">
-      <img src="{% static 'general/images/2.png' %}" alt="Second slide">
+      <img src="{% static 'general/images/entry.jpg' %}" alt="Second slide">
     </div>
     <div class="item">
-      <img src="{% static 'general/images/3.jpg' %}" alt="Third slide">
-    </div>
-    <div class="item">
-      <img src="{% static 'general/images/4.jpg' %}" alt="Fourth slide">
-    </div>
-    <div class="item">
-      <img src="{% static 'general/images/5.jpg' %}" alt="Fifth slide">
+      <img src="{% static 'general/images/streetview.jpg' %}" alt="Third slide">
     </div>
   </div>
   <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
@@ -36,17 +31,14 @@
   </a>
 </div>
 
-<br>
-<div id='welcome'>
-  <h2>Welcome to the Theta Omicron chapter of <br>Alpha Chi Omega at MIT!</h2><br>
-<big>Since our start on the MIT campus in 1986, our sorority has been committed to promoting sisterhood, leadership, personal growth, and lifelong friendship. </big><br><br>
- <h4><a href='/about'>LEARN MORE ></a></h4>
-</div>
+<div align="left">
 
-<script>
-  $('.carousel').carousel({
-    interval: 5000
-  })
-</script>
+<br>
+
+<p>Our house is located on Commonwealth Avenue, in the heart of Boston.  It is close to famous landmarks, including Boston Common and Fenway Hall.</p><br>
+
+<p>The house is a home for approximately two dozen of our sisters, who range in age, major, and activities.  For any inquiries about sorority housing or our house in particular, feel free to email us at <a href="mailto:axo-exec@mit.edu">axo-exec@mit.edu</a>.</p>
+
+</div>
 
 {% endblock content %}

@@ -37,18 +37,6 @@ hr {
   background-image: -o-linear-gradient(left, #fff, #8c8b8b, #fff); 
 }
 
-#carousel2 {
-  width: 400px;
-  float:right;
-  padding-left:20px;
-}
-
-#carousel3 {
-  width: 400px;
-  float:left;
-  padding-right:20px;
-}
-
 .carousel-control.left, .carousel-control.right {
   background-image: none;
 }
@@ -141,6 +129,13 @@ hr {
   float: left;
 }
 
+/*FAQ*/
+#faq-pic {
+  width: 500px;
+  float:left;
+  padding-right:20px;
+}
+
 
 /*HISTORY*/
 
@@ -160,6 +155,39 @@ hr {
 #history-caption {
   padding: 20px;
   padding-top: 0px;
+}
+
+/*HOUSE*/
+#house-pic-1 {
+  width: 800px;
+  float:left;
+  padding-bottom:20px;
+}
+
+#house-pic-2 {
+  width: 400px;
+  float:left;
+  padding-right:20px;
+}
+
+/*RECRUITMENT*/
+#recruitment-pic {
+  width: 500px;
+  float:right;
+  padding-left:20px;
+}
+
+/*PHILANTHROPY*/
+#phil-pic-1 {
+  width: 400px;
+  float: left;
+  padding-right: 20px;
+}
+
+#phil-pic-2 {
+  width: 300px;
+  float: right;
+  padding-left: 20px;
 }
 
 /*DROPDOWN MENUS*/

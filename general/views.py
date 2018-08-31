@@ -46,13 +46,13 @@ def ex(request):
   return HttpResponse(template.render(context, request))
 
 def house(request):
-  return render(request, 'general/construction.html', {'title': 'Our House'})
+  return render(request, 'general/house.html', {})
 
 def sisterhood(request):
   return render(request, 'general/sisterhood.html', {})
 
 def philanthropy(request):
-  return render(request, 'general/construction.html', {'title': 'Philanthropy'})
+  return render(request, 'general/philanthropy.html', {})
 
 def recruitment(request):
   return render(request, 'general/recruitment.html', {})
