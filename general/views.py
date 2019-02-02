@@ -80,7 +80,7 @@ def sisters(request):
   return HttpResponse(template.render(context, request))
 
 def involvement(request):
-  return render(request, 'general/construction.html', {'title': 'Involvement'})
+  return render(request, 'general/involvement.html', {'title': 'Involvement'})
 
 def alumni(request):
   return render(request, 'general/alumni.html', {'title': 'Alumni'})
