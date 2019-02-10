@@ -34,6 +34,7 @@ class Setup(models.Model):
   VP_Intellectual_Development = models.ForeignKey(Sister, on_delete=models.CASCADE, related_name='VP_Intellectual_Development', blank=True, null=True)
   VP_Facility_Operations = models.ForeignKey(Sister, on_delete=models.CASCADE, related_name='VP_Facility_Operations', blank=True, null=True)
   VP_Philanthropy = models.ForeignKey(Sister, on_delete=models.CASCADE, related_name='VP_Philanthropy', blank=True, null=True)
+  VP_Recruitment_Information = models.ForeignKey(Sister, on_delete=models.CASCADE, related_name='VP_Recruitment_Information', blank=True, null=True)
   def __str__(self):
     return str(self.year_of_graduating_seniors-1)+'-'+str(self.year_of_graduating_seniors)
   class Meta:
