@@ -88,3 +88,6 @@ def alumni(request):
 
 def outsidemit(request):
   return render(request, 'general/outsidemit.html', {'title': 'Outside MIT'})
+
+  def blm(request):
+    return render(request, 'general/blm.html', {'title': 'Black Lives Matter'})
