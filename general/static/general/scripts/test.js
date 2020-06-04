@@ -9,6 +9,9 @@ switch(x) {
   case '/philanthropy/':
     title = '#chapter-life'
     break;
+  case '/blm/':
+    title = '#philanthropy'
+    break;
   case '/recruitment/':
   case '/faq/':
     title = '#recruitment'
