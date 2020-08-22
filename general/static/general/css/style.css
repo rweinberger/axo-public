@@ -12,7 +12,7 @@ html, body {
 }
 
 a {
-  color: #000;
+  color: #41BBD9;
   text-decoration: none
 }
 
@@ -27,14 +27,14 @@ h1, h2, h3, h4 {
   margin:0px;
 }
 
-hr { 
-  border: 0; 
+hr {
+  border: 0;
   max-width: 800px;
-  height: 1px; 
+  height: 1px;
   background-image: -webkit-linear-gradient(left, #fff, #8c8b8b, #fff);
   background-image: -moz-linear-gradient(left, #fff, #8c8b8b, #fff);
   background-image: -ms-linear-gradient(left, #fff, #8c8b8b, #fff);
-  background-image: -o-linear-gradient(left, #fff, #8c8b8b, #fff); 
+  background-image: -o-linear-gradient(left, #fff, #8c8b8b, #fff);
 }
 
 .carousel-control.left, .carousel-control.right {
