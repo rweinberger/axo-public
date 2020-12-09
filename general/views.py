@@ -36,7 +36,8 @@ def ex(request):
     ('VP Intellectual Development', setup.VP_Intellectual_Development),
     ('VP Facility Operations', setup.VP_Facility_Operations),
     ('VP Philanthropy', setup.VP_Philanthropy),
-    ('VP Recruitment Information', setup.VP_Recruitment_Information)
+    ('VP Recruitment Information', setup.VP_Recruitment_Information),
+    ('VP Diversity, Equity + Inclusion', setup.VP_DEI)
   ]
   context = {
     'pres': setup.President,
